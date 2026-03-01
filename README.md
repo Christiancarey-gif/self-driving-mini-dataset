@@ -9,24 +9,6 @@ The goal of this dataset is to demonstrate:
 - Tesla‑style structured labels (lane lines, objects, events)
 - QA review logs with analytics‑ready CSV exports
 
----
 
-## Dataset Structure
 
-self_driving_dataset/
-├── raw/
-│   ├── clip_001/
-│   │   └── metadata.json
-│   ├── clip_002/
-│   │   └── metadata.json
-│   └── clip_003/
-│       └── metadata.json
-├── labels/
-│   ├── clip_001_labels.json
-│   ├── clip_002_labels.json
-│   └── clip_003_labels.json
-├── qa_reports/
-│   └── qa_log
-├── export_csv.py
-└── README.md
 
