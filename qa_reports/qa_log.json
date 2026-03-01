@@ -1,0 +1,51 @@
+{
+    "clip_001": {
+        "checked_by": "Christian",
+        "issues_found": [
+            {
+                "type": "object_detection",
+                "severity": "medium",
+                "description": "Vehicle on the left side of the frame is not detected in either frame.",
+                "impact": "Missing nearby vehicles can lead to unsafe lane changes or incorrect planning decisions."
+            },
+            {
+                "type": "event_detection",
+                "severity": "medium",
+                "description": "Pedestrian crossing event not triggered despite pedestrian entering the crosswalk.",
+                "impact": "Failure to detect pedestrian crossing intent can cause delayed braking or unsafe yielding behavior."
+            },
+            {
+                "type": "bounding_box_stability",
+                "severity": "minor",
+                "description": "Bounding box on the main vehicle ahead shifts slightly between frames.",
+                "impact": "Minor instability may affect object tracking but does not significantly impact planning in this short clip."
+            }
+        ],
+        "notes": "Urban daytime scene with moderate traffic. Lane lines detected consistently. Lighting and shadows appear realistic."
+    },
+
+    "clip_002": {
+        "checked_by": "Christian",
+        "issues_found": [],
+        "notes": "Rural nighttime scene with low traffic. All objects present in the scene are detected consistently with no flickering or ID switching. Lane lines remain stable and visible under headlights. No traffic signs appear in the clip. Environment and lighting are realistic. Overall, the clip passes with no issues."
+    },
+
+    "clip_003": {
+        "checked_by": "Christian",
+        "issues_found": [
+            {
+                "type": "traffic_sign_detection",
+                "severity": "minor",
+                "description": "Stop sign detected late by approximately 0.5–1.0 seconds after becoming visible.",
+                "impact": "Late detection may cause delayed braking or incomplete stopping behavior."
+            },
+            {
+                "type": "pedestrian_event",
+                "severity": "medium",
+                "description": "Pedestrian intent/crosswalk occupancy event not triggered despite pedestrian stepping forward.",
+                "impact": "Failure to detect pedestrian intent can lead to unsafe yielding or delayed braking."
+            }
+        ],
+        "notes": "Metropolitan rainy scene. All objects and lanes detected consistently with no ID switching. Reflections and wet road conditions reduce confidence slightly but remain within acceptable limits."
+    }
+}

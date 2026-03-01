@@ -1,0 +1,83 @@
+{
+    "clip_id": "clip_002",
+    "frames": [
+        {
+            "frame_id": "frame_001",
+            "lane_lines": [
+                {
+                    "type": "solid_yellow",
+                    "position": "left",
+                    "curvature": 0.05,
+                    "confidence": 0.92
+                },
+                {
+                    "type": "solid_white",
+                    "position": "right",
+                    "curvature": 0.04,
+                    "confidence": 0.90
+                }
+            ],
+            "objects": [
+                {
+                    "type": "deer",
+                    "distance_m": 28,
+                    "speed_mps": 0,
+                    "direction": "roadside_left"
+                }
+            ],
+            "events": ["low_visibility"]
+        },
+        {
+            "frame_id": "frame_002",
+            "lane_lines": [
+                {
+                    "type": "solid_yellow",
+                    "position": "left",
+                    "curvature": 0.07,
+                    "confidence": 0.89
+                },
+                {
+                    "type": "solid_white",
+                    "position": "right",
+                    "curvature": 0.06,
+                    "confidence": 0.88
+                }
+            ],
+            "objects": [
+                {
+                    "type": "deer",
+                    "distance_m": 20,
+                    "speed_mps": 2,
+                    "direction": "crossing_left_to_right"
+                }
+            ],
+            "events": ["animal_crossing"]
+        },
+        {
+            "frame_id": "frame_003",
+            "lane_lines": [
+                {
+                    "type": "solid_yellow",
+                    "position": "left",
+                    "curvature": 0.08,
+                    "confidence": 0.87
+                },
+                {
+                    "type": "solid_white",
+                    "position": "right",
+                    "curvature": 0.07,
+                    "confidence": 0.86
+                }
+            ],
+            "objects": [
+                {
+                    "type": "deer",
+                    "distance_m": 12,
+                    "speed_mps": 3,
+                    "direction": "crossing_left_to_right"
+                }
+            ],
+            "events": ["hard_brake"]
+        }
+    ]
+}

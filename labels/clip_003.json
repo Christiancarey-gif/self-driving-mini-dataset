@@ -1,0 +1,75 @@
+{
+    "clip_id": "clip_003",
+    "frames": [
+        {
+            "frame_id": "frame_001",
+            "lane_lines": [
+                {
+                    "type": "solid_white",
+                    "position": "left",
+                    "curvature": 0.03,
+                    "confidence": 0.85
+                },
+                {
+                    "type": "solid_white",
+                    "position": "right",
+                    "curvature": 0.03,
+                    "confidence": 0.84
+                }
+            ],
+            "objects": [
+                {
+                    "type": "car",
+                    "distance_m": 10,
+                    "speed_mps": 8,
+                    "direction": "same_lane"
+                },
+                {
+                    "type": "car",
+                    "distance_m": 6,
+                    "speed_mps": 5,
+                    "direction": "adjacent_lane_left"
+                },
+                {
+                    "type": "pedestrian",
+                    "distance_m": 14,
+                    "speed_mps": 1,
+                    "direction": "standing_under_umbrella"
+                }
+            ],
+            "events": ["reduced_visibility"]
+        },
+        {
+            "frame_id": "frame_002",
+            "lane_lines": [
+                {
+                    "type": "solid_white",
+                    "position": "left",
+                    "curvature": 0.04,
+                    "confidence": 0.83
+                },
+                {
+                    "type": "solid_white",
+                    "position": "right",
+                    "curvature": 0.04,
+                    "confidence": 0.82
+                }
+            ],
+            "objects": [
+                {
+                    "type": "car",
+                    "distance_m": 8,
+                    "speed_mps": 6,
+                    "direction": "same_lane"
+                },
+                {
+                    "type": "car",
+                    "distance_m": 5,
+                    "speed_mps": 4,
+                    "direction": "adjacent_lane_left"
+                }
+            ],
+            "events": ["car_braking", "wet_road"]
+        }
+    ]
+}

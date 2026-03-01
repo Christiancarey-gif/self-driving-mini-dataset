@@ -1,0 +1,74 @@
+{
+    "clip_id": "clip_001",
+    "frames": [
+        {
+            "frame_id": "frame_001",
+            "lane_lines": [
+                {
+                    "type": "solid_white",
+                    "position": "left",
+                    "curvature": 0.01,
+                    "confidence": 0.97
+                },
+                {
+                    "type": "dashed_white",
+                    "position": "right",
+                    "curvature": 0.02,
+                    "confidence": 0.95
+                }
+            ],
+            "objects": [
+                {
+                    "type": "car",
+                    "distance_m": 14,
+                    "speed_mps": 11,
+                    "direction": "same_lane"
+                },
+                {
+                    "type": "pedestrian",
+                    "distance_m": 8,
+                    "speed_mps": 1,
+                    "direction": "crossing_left_to_right"
+                },
+                {
+                    "type": "traffic_light",
+                    "state": "green",
+                    "distance_m": 22
+                }
+            ],
+            "events": []
+        },
+        {
+            "frame_id": "frame_002",
+            "lane_lines": [
+                {
+                    "type": "solid_white",
+                    "position": "left",
+                    "curvature": 0.01,
+                    "confidence": 0.96
+                },
+                {
+                    "type": "dashed_white",
+                    "position": "right",
+                    "curvature": 0.02,
+                    "confidence": 0.94
+                }
+            ],
+            "objects": [
+                {
+                    "type": "car",
+                    "distance_m": 12,
+                    "speed_mps": 10,
+                    "direction": "same_lane"
+                },
+                {
+                    "type": "pedestrian",
+                    "distance_m": 7,
+                    "speed_mps": 1,
+                    "direction": "crossing_left_to_right"
+                }
+                ],
+                "events": ["pedestrian_crossing"]
+        }
+    ]
+}
